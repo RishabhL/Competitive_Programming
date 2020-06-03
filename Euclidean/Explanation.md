@@ -12,3 +12,8 @@ and
 ```
 gcd(0, b) = b
 ```
+The second one, and perhaps the most important one being:
+```
+gcd(a, b) = gcd(b, r)
+```
+Where <code>r</code> is equal to the remainder of <code>a / b</code>. This is also known as <code>a MOD b</code>, and can be found in Python like this, <code> a % b </code>
