@@ -24,6 +24,7 @@ Knowing this, we can already start to formulate an algorithm. We have an end poi
 Before diving in and writing an algorithm, it may be worth to have a look at a worked example done by hand, so one can better understand how the algorithm should work.
 
 Finding the GCD of <code>324</code> and <code>513</code>.
+```
 A = 513
 B = 324
 
@@ -51,6 +52,6 @@ B = 27
 
 A = 27
 B = 0.
-
+```
 As the end point was either A or B being 0, this is where we finish as here B = 0. As a result, the GCD of 513 and 324 is 27.
 
