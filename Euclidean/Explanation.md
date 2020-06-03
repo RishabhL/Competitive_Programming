@@ -53,5 +53,5 @@ B = 27
 A = 27
 B = 0.
 ```
-As the end point was either A or B being 0, this is where we finish as here B = 0. As a result, the GCD of 513 and 324 is 27.
+As the end point was either <code>A</code> or <code>B</code> being <code>0</code>, this is where we finish as here <code>B = 0</code>. As a result, the GCD of <code>513</code> and <code>324</code> is <code>27</code>.
 
