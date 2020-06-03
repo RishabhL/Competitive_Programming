@@ -55,3 +55,15 @@ B = 0.
 ```
 As the end point was either <code>A</code> or <code>B</code> being <code>0</code>, this is where we finish as here <code>B = 0</code>. As a result, the GCD of <code>513</code> and <code>324</code> is <code>27</code>.
 
+# Formulating the Algorithm in Python.
+We start of declaring a function which takes in two arguments, <code>A</code> and <code>B</code>, and returns the GCD of these two numbers. As a result, we begin with the following code:
+```Python
+def gcd(a, b):
+```
+We have to then set the end point, i.e. when this function returns the final value. From what we discussed above, it can be seen that the endpoint is when <code>A</code> or <code>B</code> is <code>0</code>. To condense this down further, we can say that the endpoint is when only <code>B</code> = 0. When we reach this endpoint, we want to return <code>A</code>. This develops the algorithm into the following:
+```Python
+def gcd(a, b):
+  while b > 0:
+    pass
+  return a
+```
