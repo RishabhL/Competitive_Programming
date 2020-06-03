@@ -59,11 +59,36 @@ As the end point was either <code>A</code> or <code>B</code> being <code>0</code
 We start of declaring a function which takes in two arguments, <code>A</code> and <code>B</code>, and returns the GCD of these two numbers. As a result, we begin with the following code:
 ```Python
 def gcd(a, b):
+  pass
 ```
 We have to then set the end point, i.e. when this function returns the final value. From what we discussed above, it can be seen that the endpoint is when <code>A</code> or <code>B</code> is <code>0</code>. To condense this down further, we can say that the endpoint is when only <code>B</code> = 0. When we reach this endpoint, we want to return <code>A</code>. This develops the algorithm into the following:
 ```Python
 def gcd(a, b):
   while b > 0:
     pass
+  return a
+```
+For now, we have left part where we implement the modulating part as <code>pass</code>. Time to now implement that part of that code. What we want to do is as follows. Get <code>A MOD B</code> and assign it to <code>R</code>, Assign <code>A</code> as <code>B</code> and <code>B</code> as <code>R</code> and repeat. With this in place, the code looks as follows:
+```Python
+def gcd(a, b):
+  while b > 0:
+    r = a % b
+    a = b
+    b = r
+  return a
+```
+Although this code will work absolutely fine, there is one way in which we can save a couple of lines as this is by doing the following:
+```Python
+def gcd(a, b):
+  while b > 0:
+    a, b = b, a % b
+  return a
+```
+And here is the completed code. This will return the GCD of <code>A</code> and <code>B</code> using Euclidean's algorithm.
+# Completed Code
+```Python
+def gcd(a, b):
+  while b > 0:
+    a, b = b, a % b
   return a
 ```
