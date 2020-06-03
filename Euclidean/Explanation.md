@@ -12,8 +12,10 @@ and
 ```
 gcd(0, B) = B
 ```
-The second one, and perhaps the most important one being:
+The second one, and perhaps the most important property being:
 ```
 gcd(A, B) = gcd(B, R)
 ```
 Where <code>R</code> is equal to the remainder of <code>A / B</code>. This is also known as <code>A MOD B</code>, and can be found in Python like this, <code>A % B</code>
+
+Knowing this, we can already start to formulate an algorithm. We have an end point; when either A or B becomes 0. We know how to reach that end point; By finding A MOD B to get R, and then plugging in B and R back into the function and repeating until we reach the end point described.
