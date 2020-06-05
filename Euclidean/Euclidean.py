@@ -1,11 +1,10 @@
 # Rishabh Luthra, Made as part of Competitive Programming
-# Code to work out the GCD and LCM of two numbers, a and b, using Euclidean Algorithm
+# Code to work out the GCD and LCM of two numbers, a and b, using the Euclidean Algorithm
 
 def gcd(a, b):
   while b > 0:
-    r = a % b
-    a = b
-    b = r
+    a, b = b, a % b
   return a
 
-print(gcd(513, 324))
+def lcm(a, b):
+  return (a * b) / gcd(a, b)
