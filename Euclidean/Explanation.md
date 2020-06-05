@@ -23,7 +23,7 @@ Knowing this, we can already start to formulate an algorithm. We have an end poi
 # Worked Example
 Before diving in and writing an algorithm, it may be worth to have a look at a worked example done by hand, so one can better understand how the algorithm should work.
 
-Finding the GCD of <code>324</code> and <code>513</code>.
+Finding the GCD of <code>513</code> and <code>324</code>.
 ```
 A = 513
 B = 324
@@ -53,7 +53,7 @@ B = 27
 A = 27
 B = 0.
 ```
-As the end point was either <code>A</code> or <code>B</code> being <code>0</code>, this is where we finish as here <code>B = 0</code>. As a result, the GCD of <code>513</code> and <code>324</code> is <code>27</code>.
+As the end point was either <code>A</code> or <code>B</code> being <code>0</code>, this is where we finish as here <code>B = 0 </code>. As a result, the GCD of <code>513</code> and <code>324</code> is <code>27</code>.
 
 # Formulating the Algorithm in Python.
 We start of declaring a function which takes in two arguments, <code>A</code> and <code>B</code>, and returns the GCD of these two numbers. As a result, we begin with the following code:
@@ -68,7 +68,7 @@ def gcd(a, b):
     pass
   return a
 ```
-For now, we have left part where we implement the modulating part as <code>pass</code>. Time to now implement that part of that code. What we want to do is as follows. Get <code>A MOD B</code> and assign it to <code>R</code>, Assign <code>A</code> as <code>B</code> and <code>B</code> as <code>R</code> and repeat. With this in place, the code looks as follows:
+For now, we have left part where we implement the modulating part as <code>pass</code>. Time to now implement that part of that code. What we want to do is as follows: Get <code>A MOD B</code> and assign it to <code>R</code>, Assign <code>A</code> as <code>B</code> and <code>B</code> as <code>R</code> and repeat. With this in place, the code looks as follows:
 ```Python
 def gcd(a, b):
   while b > 0:
@@ -77,7 +77,7 @@ def gcd(a, b):
     b = r
   return a
 ```
-Although this code will work absolutely fine, there is one way in which we can save a couple of lines as this is by doing the following:
+Although this code will work absolutely fine, there is one way in which we can save a couple of lines and this is by doing the following:
 ```Python
 def gcd(a, b):
   while b > 0:
