@@ -10,3 +10,5 @@ We begin by initiating a function that will take in <code>N</code> as an argumen
 ```python
 def sieve_of_erathosthenes(n):
 ```
+
+We want to begin by assigning a list that will contain the current state of all the numbers from <code>2 to N</code>
