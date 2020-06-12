@@ -8,7 +8,15 @@ It does this by an iterative process of starting with the first prime number, 2,
 We begin by initiating a function that will take in <code>N</code> as an argument and perhaps return a list of all integers up to <code>N</code> that are prime. Let's start of by first initiating the function itself:
 
 ```python
-def sieve_of_erathosthenes(n):
+def sieve_of_eratosthenes(n):
 ```
 
 We want to begin by assigning a list that will contain the current state of all the numbers from <code>2 to N</code>. We can do this by either first initiating a list of integers from <code>2 to N</code> and removing integers that are composite, keeping only the ones with are prime. We can also do this by creating a list of Booleans that represent the numbers from <code>2 to N</code>. The state of these Booleans will first be all set to <code>True</code>, and we then mark all composites as <code>False</code>.
+
+```python
+def sieve_of_eratosthenes(n):
+    primes = [True for i in range(n + 1)] 
+    primes[0] = False
+    primes[1] = False
+```
+
